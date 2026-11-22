@@ -29,7 +29,6 @@
       }
 
       /* Back Button */
-
       .back-button {
         display: inline-block;
         background-color: #2d6a4f;
@@ -59,7 +58,6 @@
       }
 
       /* Search Bar and Counter */
-
       .header-row {
         display: flex;
         justify-content: space-between;
@@ -86,7 +84,6 @@
       }
 
       /* Reviews Grid */
-
       .reviews-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -117,7 +114,6 @@
       }
 
       /* Medical History Table */
-
       .table-wrapper {
         width: 100%;
         overflow-x: auto;
@@ -148,7 +144,6 @@
       }
 
       /* Add Pet Form */
-
       .form-inline {
         background-color: #f1faee;
         padding: 15px;
@@ -168,7 +163,6 @@
       }
 
       /* Cost Estimator */
-
       .estimator-section {
         background-color: #fff8e1;
         padding: 20px;
@@ -178,7 +172,6 @@
       }
 
       /* Upload Section */
-
       .upload-section {
         background-color: #e8f5e9;
         padding: 20px;
@@ -241,7 +234,6 @@
       }
 
       /* Additional Tools */
-
       #owner-extra-section {
         margin-top: 30px;
       }
@@ -261,7 +253,6 @@
       }
 
       /* Responsive Design */
-
       @media (max-width: 600px) {
         body {
           padding: 10px;
@@ -286,13 +277,11 @@
   <body>
     <div class="container">
       <!-- BACK TO HOME BUTTON -->
-
       <a href="../index.html" class="back-button"> ← Back to Home </a>
 
       <h1>Pet Owner Portal</h1>
 
       <!-- 1. PET OWNER REVIEWS -->
-
       <h2>1. Pet Owner Reviews</h2>
 
       <div class="reviews-box">
@@ -300,10 +289,10 @@
           <img src="images_good/bruno.jpg" alt="Bruno the dog" />
 
           <blockquote>
-            <q
-              >Quick diagnosis and great care for Bruno. His recovery was super
-              smooth!</q
-            >
+            <q>
+              Quick diagnosis and great care for Bruno. His recovery was super
+              smooth!
+            </q>
           </blockquote>
 
           <p><strong>- Rahul Sharma (Dog Owner)</strong></p>
@@ -313,10 +302,10 @@
           <img src="images_good/bella.jpg" alt="Bella the cat" />
 
           <blockquote>
-            <q
-              >Tracking Bella's rabies vaccination and medical records here is
-              effortless.</q
-            >
+            <q>
+              Tracking Bella's rabies vaccination and medical records here is
+              effortless.
+            </q>
           </blockquote>
 
           <p><strong>- Sneha Verma (Cat Owner)</strong></p>
@@ -324,7 +313,6 @@
       </div>
 
       <!-- 2. PET MEDICAL HISTORY -->
-
       <h2>2. Pet Medical History</h2>
 
       <div class="header-row">
@@ -378,7 +366,6 @@
       </div>
 
       <!-- ADD NEW PET RECORD FORM -->
-
       <div class="form-inline">
         <div>
           <label for="newOwner">Owner Name:</label>
@@ -408,11 +395,10 @@
       </button>
 
       <!-- 3. QUICK COST ESTIMATOR -->
-
       <h2>Quick Service Cost Estimator</h2>
 
       <div class="estimator-section">
-        <label for="serviceSelect">Select Veterinary Service:</label>
+        <label for="serviceSelect"> Select Veterinary Service: </label>
 
         <select id="serviceSelect">
           <option value="500">General Consultation - ₹500</option>
@@ -429,11 +415,10 @@
       </div>
 
       <!-- 4. UPLOAD DIAGNOSTIC REPORT -->
-
       <h2>3. Upload Diagnostic Report & Get Prescription</h2>
 
       <div class="upload-section">
-        <label for="ownerName">Enter Pet Owner Name:</label>
+        <label for="ownerName"> Enter Pet Owner Name: </label>
 
         <input type="text" id="ownerName" placeholder="e.g., Rahul Sharma" />
 
@@ -463,17 +448,11 @@
       </div>
 
       <!-- ADDITIONAL PET OWNER TOOLS -->
-
       <section id="owner-extra-section">
         <h2>Additional Pet Owner Tools</h2>
 
         <p style="margin-bottom: 12px">
-          <a
-            href="owner1.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="extra-link"
-          >
+          <a href="owner1.html" class="extra-link">
             Additional Pet Owner Tools
           </a>
         </p>
@@ -481,10 +460,8 @@
     </div>
 
     <!-- JAVASCRIPT LOGIC -->
-
     <script>
       // 1. ADD NEW MEDICAL RECORD
-
       function addMedicalRow() {
         let owner = document.getElementById("newOwner").value.trim();
         let pet = document.getElementById("newPet").value.trim();
@@ -514,7 +491,6 @@
         updateRecordCount();
 
         // Clear input fields
-
         document.getElementById("newOwner").value = "";
         document.getElementById("newPet").value = "";
         document.getElementById("newWeight").value = "";
@@ -523,14 +499,12 @@
         document.getElementById("newStatus").value = "";
 
         // Apply current search filter
-
         searchTable();
 
         alert("New pet record added successfully!");
       }
 
       // 2. UPDATE RECORD COUNTER
-
       function updateRecordCount() {
         let table = document.getElementById("medicalTable");
 
@@ -540,7 +514,6 @@
       }
 
       // 3. SEARCH MEDICAL RECORDS
-
       function searchTable() {
         let input = document.getElementById("searchInput");
 
@@ -564,7 +537,6 @@
       }
 
       // 4. QUICK COST ESTIMATOR
-
       function calculateCost() {
         let selectBox = document.getElementById("serviceSelect");
 
@@ -585,7 +557,6 @@
       }
 
       // 5. HANDLE DIAGNOSTIC REPORT UPLOAD
-
       function handleUpload() {
         let owner = document.getElementById("ownerName").value.trim();
 
@@ -609,7 +580,6 @@
 
         if (!allowedTypes.includes(file.type)) {
           alert("Please upload a JPG, PNG or PDF file.");
-
           return;
         }
 
@@ -617,7 +587,6 @@
 
         if (file.size > maxSize) {
           alert("File size must be less than 10 MB.");
-
           return;
         }
 
@@ -628,9 +597,7 @@
       }
 
       // INITIALIZE RECORD COUNTER
-
       updateRecordCount();
     </script>
   </body>
 </html>
-
