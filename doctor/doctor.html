@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard | VetCare</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <a href="#dashboard" class="logo">
+            🐾 VetCare
+        </a>
+
+        <div class="sidebar-title">DOCTOR PORTAL</div>
+
+        <nav>
+            <a href="#dashboard" class="nav-link active">
+                <span>▦</span> Dashboard
+            </a>
+
+            <a href="#appointments" class="nav-link">
+                <span>▣</span> Appointments
+            </a>
+
+            <a href="#patients" class="nav-link">
+                <span>♡</span> My Patients
+            </a>
+
+            <a href="#records" class="nav-link">
+                <span>▤</span> Medical Records
+            </a>
+
+            <a href="#prescriptions" class="nav-link">
+                <span>✚</span> Prescriptions
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content" id="dashboard">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">VetCare / Doctor</p>
+                <h2>Doctor Dashboard</h2>
+            </div>
+
+            <div class="portal-label">
+                🩺 Doctor Portal
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome-section">
+
+            <div>
+                <p class="welcome-tag">WELCOME TO VETCARE</p>
+
+                <h1>Welcome, Doctor! 👋</h1>
+
+                <p>
+                    Manage your appointments, view pet records
+                    and keep track of patient treatments.
+                </p>
+            </div>
+
+            <div class="welcome-icon">
+                🐕
+            </div>
+
+        </section>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon green">▣</div>
+                <p>Total Appointments</p>
+                <h2>12</h2>
+                <span>Scheduled visits</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">♡</div>
+                <p>Total Patients</p>
+                <h2>48</h2>
+                <span>Registered pets</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">▤</div>
+                <p>Medical Records</p>
+                <h2>35</h2>
+                <span>Available records</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">✚</div>
+                <p>Prescriptions</p>
+                <h2>18</h2>
+                <span>Created records</span>
+            </div>
+
+        </section>
+
+
+        <!-- APPOINTMENTS -->
+
+        <section class="content-card" id="appointments">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-tag">DAILY SCHEDULE</p>
+                    <h2>Appointments</h2>
+                </div>
+
+                <a href="#appointments" class="view-link">
+                    View All →
+                </a>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Owner Name</th>
+                            <th>Pet Type</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td><strong>Bruno</strong></td>
+                            <td>Rahul Sharma</td>
+                            <td>Dog</td>
+                            <td>22 Nov 2026</td>
+                            <td>09:00 AM</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Bella</strong></td>
+                            <td>Sneha Verma</td>
+                            <td>Cat</td>
+                            <td>22 Nov 2026</td>
+                            <td>10:30 AM</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Max</strong></td>
+                            <td>Amit Kumar</td>
+                            <td>Dog</td>
+                            <td>22 Nov 2026</td>
+                            <td>11:30 AM</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Luna</strong></td>
+                            <td>Priya Singh</td>
+                            <td>Cat</td>
+                            <td>22 Nov 2026</td>
+                            <td>12:30 PM</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- PATIENTS -->
+
+        <section class="content-card" id="patients">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-tag">PET INFORMATION</p>
+                    <h2>My Patients</h2>
+                </div>
+
+                <a href="#patients" class="view-link">
+                    View All →
+                </a>
+            </div>
+
+            <div class="patient-grid">
+
+                <div class="patient-card">
+                    <div class="pet-image dog">🐕</div>
+                    <div>
+                        <h3>Bruno</h3>
+                        <p>Golden Retriever</p>
+                        <span>Owner: Rahul Sharma</span>
+                    </div>
+                </div>
+
+                <div class="patient-card">
+                    <div class="pet-image cat">🐈</div>
+                    <div>
+                        <h3>Bella</h3>
+                        <p>Persian Cat</p>
+                        <span>Owner: Sneha Verma</span>
+                    </div>
+                </div>
+
+                <div class="patient-card">
+                    <div class="pet-image dog">🐶</div>
+                    <div>
+                        <h3>Max</h3>
+                        <p>Labrador</p>
+                        <span>Owner: Amit Kumar</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEDICAL RECORDS -->
+
+        <section class="content-card" id="records">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-tag">HEALTH INFORMATION</p>
+                    <h2>Medical Records</h2>
+                </div>
+            </div>
+
+            <div class="simple-feature">
+                <div class="feature-icon">📋</div>
+
+                <div>
+                    <h3>Pet Medical History</h3>
+                    <p>
+                        View previous diagnoses, allergies,
+                        vaccinations and treatment details of pets.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- PRESCRIPTIONS -->
+
+        <section class="content-card" id="prescriptions">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-tag">TREATMENT DETAILS</p>
+                    <h2>Prescriptions</h2>
+                </div>
+            </div>
+
+            <div class="simple-feature">
+                <div class="feature-icon prescription-icon">💊</div>
+
+                <div>
+                    <h3>Prescription Management</h3>
+                    <p>
+                        View prescribed medicines, dosage details
+                        and treatment recommendations for pets.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>© 2026 VetCare | Veterinary Management System</p>
+            <p>Providing better care for every pet 🐾</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
